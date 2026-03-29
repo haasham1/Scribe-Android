@@ -381,3 +381,7 @@ tasks.register<JacocoReport>("jacocoTestReport") {
         csv.required.set(true)
     }
 }
+
+tasks.named("preBuild") {
+    dependsOn(rootProject.tasks.named("startApi"))
+}

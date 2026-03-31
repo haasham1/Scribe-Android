@@ -2,6 +2,11 @@
 """
 Parse a Kover coverage report for a human-readable CLI output.
 """
+import utils.net
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 import xml.etree.ElementTree as ET
 from collections import defaultdict
 import os
